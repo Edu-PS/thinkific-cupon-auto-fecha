@@ -1,0 +1,25 @@
+<!DOCTYPE html>                                 <!- Tipo de documento, en este caso HTML ->
+<html lang="en">                                <!- Dentro de esto estará todo el contenido de la pagina web ->
+<head>                                          <!- Todo lo que se quiera incluir en la pagina pero que no sea visible ->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de todo</title>               <!- Titulo que aparece en la pestaña del navegador ->
+    
+    <!–
+    RELATIVA: Para apuntar a una ruta relativa se comienza por el lugar donde se hace el llamado al archivo (en este caso estamos llamando desde index.html
+    con lo que se accede al directorio "scripts" y luego se escrbe el nombre del archivo "fechas.js".
+    
+    Los dos puntos (..) se utilizan para subir un escalon del directorio actual donde se hace el llamado. Por ejemplo, si index.html estuviera dentro del directorio "styles"
+    entonces el llamado al archivo seria scr="./scripts/fechas.js"
+
+    La barra invertida (/) al principio de la direccion, indica que se tiene que comenzar a apuntar al archivo desde la raiz del sitio web, en este caso scr=/scripts/fechas.js
+    
+    ABSOLUTA: scr="C:/Users/leper/Documents/LP/Proyectos/VisualStudioCode/Thinkific_CuponAutoFrecha/scripts/fechas.js" (NOTAS:::: ES MEJOR RELATIVAS)
+    –>
+    <script src="scripts/fechas.js"></script>   <!- Llamada a un archivo script ->
+
+</head>
+<body>
+    <a id="fecha-sistema"> Aun sin escribir fecha </a>
+</body>
+</html>
